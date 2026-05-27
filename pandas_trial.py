@@ -1,15 +1,15 @@
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
 
-def read_excel_file():
-    #Define the path to the Excel file
-    file_path = './tabel.xlsx'
+warnings.filterwarnings('ignore')
 
-    # Read the Excel file into a pandas DataFrame
-    df = pd.read_excel(file_path)
+plt.style.use('seaborn-v0_8-darkgrid')
+sns.set_palette("husl")
 
-	# Display the first few rows of the DataFrame
-    print(df.count())
-    print(df.head())
-    print(df.tail())
-
-read_excel_file()
+print("=" * 60)
+print("VIDEO GAME SALES DATA ANALYSIS PROJECT")
+print("=" * 60)
+print("All libraries imported successfully.")
