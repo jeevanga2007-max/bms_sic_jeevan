@@ -1,15 +1,12 @@
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import warnings
 
-warnings.filterwarnings('ignore')
+df = pd.DataFrame({
 
-plt.style.use('seaborn-v0_8-darkgrid')
-sns.set_palette("husl")
+    "marks": [10, 20, 30, 40]
 
-print("=" * 60)
-print("VIDEO GAME SALES DATA ANALYSIS PROJECT")
-print("=" * 60)
-print("All libraries imported successfully.")
+})
+
+total = df["marks"].sum()
+
+print(total)
+print (df)
